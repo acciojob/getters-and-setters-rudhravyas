@@ -5,18 +5,18 @@ class Person {
         this._age = age;
     }
 
-	getName(){
+	get name(){
 		return this._name;
 	}
-	setAge(newAge){
-		this._age = newAge;
+	set age(newAge) {
+    this._age = newAge;
 	}
 }
 
 class Student extends Person {
-	study() {
-        console.log(`${this.name} is studying`);
-    }
+	teach() {
+    console.log(`${this.name} is teaching`);
+	}
 }
 
 class Teacher extends Person {
